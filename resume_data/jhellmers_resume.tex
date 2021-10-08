@@ -1,0 +1,200 @@
+%-------------------------
+% Resume in Latex
+% Author : Jackson Hellmers
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+%------------
+% my new template
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\exptitle}[4]{
+  \vspace{7pt}
+  \begin{tabular*}{1.00\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1}, #2, \textit{#3} & #4 \\
+  \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\projtitle}[2]{
+  \vspace{7pt}
+  \begin{tabular*}{1.00\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1}, #2 \\
+  \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\award}[2]{
+  \vspace{7pt}
+  \begin{tabular*}{1.00\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+  \end{tabular*}
+}
+
+
+
+\newcommand{\expstart}{\begin{itemize}[leftmargin=5mm]}
+\newcommand{\expend}{\end{itemize}\vspace{-5pt}}
+\newcommand{\expitem}[1]{\item\small{{#1 \vspace{-5pt}}}}
+
+\begin{document}
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{\Large Jackson Hellmers} & \href{mailto:hellmejt.hellmers@gmail.com}{hellmejt.hellmers@gmail.com} \\
+    \small{\href{https://github.com/jth1011}{ GitHub: \bf jth1011} \ \ \href{https://www.linkedin.com/in/jackson-hellmers/}{LinkedIn: \bf jackson-hellmers}} & \href{tel:16128048090}{(612)804-8090} \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \vspace{-1pt}
+   \begin{tabular*}{1.00\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{University of Wisconsin-Madison} & Sep 2021 - Present \\
+   \small Master of Science in Electrical Engineering & \small{GPA: Undetermined}
+  \end{tabular*}
+  \vspace{3pt}
+  \begin{tabular*}{1.00\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{University of Wisconsin-Madison} & Sep 2017 - May 2021 \\
+   \small Bachelor of Science in Electrical and Computer Engineering & \small{GPA: 3.95/4.00}
+  \end{tabular*}
+ \vspace{1pt}
+\small{\textbf{Highlighted Coursework}{: Graduate Machine Learning, Artificial Intelligence, Neural Networks,\\ Data Structures, Image Processing, Computer Vision, Signal Processing \vspace{-2pt}}}
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+
+\textbf{Languages}: Python, Java, C/C++, MATLAB, SQL  \\
+\textbf{Frameworks/Tools}: Tensorflow, PyTorch, Keras, CUDA, Linux, Github, MiKTeX  \vspace{-2pt}
+
+%-----------EXPERIENCE-----------------
+\section{Work 
+Experience}
+ \vspace{-6pt}
+  \exptitle{Electrical Engineer Intern}{Innovative Signal Analysis}{Richardson, TX}{May 2021 - Aug 2021}
+  \expstart
+    \expitem{Programmed Xilinx UltraScale RFSoC boards using Vivado Design Suite and Vitis IDE.}
+    \expitem{Generated bare metal applications to benchmark Real-time Computing cores.}
+    \expitem{Designed Verilog modules to measure latency between a system’s CPU and FPGA.}
+    \expitem{Created PCBs to measure the power draw of various components using fixed-voltage supply \\ and current sense ICs.}
+  \expend
+  
+  \exptitle{Design Verification Test Engineer}{Extreme Engineering Solutions}{Madison, WI}{Jan 2020 - Sep 2020}
+  \expstart
+    \expitem{Worked with high-bandwidth (50 GHz) oscilloscopes to verify clock and data signal functionality}
+    \expitem{Constructed and improved PCB designs to adjust clock slew rates and power supply switching speeds.}
+    \expitem{Recorded daily activities and software adjustments through online tickets and version \\ control applications.}
+    \expitem{Documented verification tests measuring the compliance of numerous I/O interfaces such as \\ USB 3.0, 100 Gig Ethernet and PCIe 4.0.}
+  \expend
+  
+  \exptitle{Systems Development Intern}{Exact Sciences}{Madison, WI}{May 2019 - Dec 2019}
+  \expstart
+    \expitem{Designed and prototyped simple DC motor control and voltage regulation circuits.}
+    \expitem{Developed and ran autonomous data-driven C++ programs on Arduino \\ boards and Python programs on Raspberry Pi boards.}
+    \expitem{Followed wiring diagrams and guidelines to assemble industrial sized automated systems.}
+  \expend
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \vspace{-6pt}
+  \projtitle{\href{https://github.com/jth1011/Digit-Recognizer}{Digit Recognition}}{Personal Project}
+  \expstart
+    \expitem{Used various \textbf{Python} libraries such as \textbf{sklearn} and \textbf{Tensorflow} to create numerous digit recognition models (KNN, Naive Bayes, CNN).}
+    \expitem{Uploaded the most successful model to Kaggle's MNIST Classification Challenge and was placed in top 5\%.}
+  \expend
+  
+    \projtitle{\href{https://github.com/jth1011/Playing-Card-Identifier}{Playing Card Identifier}}{Personal Project}
+  \expstart
+    \expitem{Created a CNN to properly identify the value and suit of a playing card within an image.}
+    \expitem{Used the Image Augmentation library in \textbf{Keras} to generate a large set of training images from a small set of actual images.}
+  \expend
+ 
+  \projtitle{\href{https://github.com/jth1011}{CS760 Final Project - DeVise}}{Academic Project}
+  \expstart
+    \expitem{Inspired by and adapted from \href{http://www.cs.toronto.edu/~ranzato/publications/frome_nips2013.pdf}{\textbf{Google Research Paper:}}}DeVise - A Deep Visual-Semantic Model
+    \expitem{Combined a trained visual model with an embedded semantic model to allow for classification of unsupervised image labels by taking advantage of contextual similarity.}
+  \expend
+  
+  \projtitle{\href{https://github.com/jth1011}{ECE539 Final Project - Image Supersampling}}{Academic Project}
+  \expstart
+    \expitem{Compared State-of-the-Art CNN and GAN models to evaluate the advantages of each model.}
+    \expitem{Created own supersampling CNN that outperforms general upscaling methods such as bicubic interpolation and guassian denoising.}
+  \expend
+
+%-----------LEADERSHIP-----------------
+\section{Leadership}
+   Academic Chair, Theta Tau Professional Co-Ed Fraternity, 2020 \\
+   High School Math \& Science Tutor, Madison West High School, 2019
+
+%-------------------------------------------
+\end{document}
